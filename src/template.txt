@@ -1,0 +1,33 @@
+% [out] = binarize_image(image, whitethresh, step) returns binarized image
+%
+% Inputs:
+%   image       --   grayscale image (uint8 2D matrix). Required.
+%   whitethresh --   try to reduse this number if backgroud is not pure
+%                    white. Default: 0.9.
+%   step        --   edge length of 'sliding window' in px. Default: 16.
+%
+% Outputs:
+%   out         --   binarized image (uint8 2D matrix).
+%
+% Using:
+%   [out] = binarize_image(image)
+%   [out] = binarize_image(image, 0.96)
+%   [out] = binarize_image(image, [], 20)
+%               
+% Author: 
+%   Bogdan Vaneev (warchantua@gmail.com)
+%
+%% set default input options
+if ~exist('whitethresh','var') || ...
+        isempty(whitethresh)   || ...
+        nargin < 2
+    whitethresh = 0.9;
+end
+
+if ~exist('step','var') || ...
+        isempty(step)   || ...
+        nargin < 3
+    step = 16;
+end
+%% check for the valid input
+%% do the action

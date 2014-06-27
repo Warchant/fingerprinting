@@ -1,0 +1,934 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html lang="en"><head>
+      <meta http-equiv="X-UA-Compatible" content="IE=8">
+      
+      <!-- START OF GLOBAL NAV -->
+  <link rel="stylesheet" href="File%20Exchange%20-%20MATLAB%20Central_files/sitewide.css" type="text/css">
+  <link rel="stylesheet" href="File%20Exchange%20-%20MATLAB%20Central_files/mlc.css" type="text/css">
+  <!--[if lt IE 7]>
+  <link href="/matlabcentral/css/ie6down.css" type="text/css" rel="stylesheet">
+  <![endif]-->
+
+      
+      <meta http-equiv="content-type" content="text/html; charset=UTF-8">
+<meta name="keywords" content="file exchange, matlab answers, newsgroup access, link exchange, matlab blog, matlab central, simulink blog, matlab community, matlab and simulink community">
+<meta name="description" content="File exchange, MATLAB Answers, newsgroup access, Links, and Blogs for the MATLAB &amp; Simulink user community">
+<link rel="stylesheet" type="text/css" media="print" href="File%20Exchange%20-%20MATLAB%20Central_files/print.css">
+<title> File Exchange - MATLAB Central</title>
+<script src="File%20Exchange%20-%20MATLAB%20Central_files/ahy.js" async="" type="text/javascript"></script><script src="File%20Exchange%20-%20MATLAB%20Central_files/jquery-1.js" type="text/javascript"></script>
+<script src="File%20Exchange%20-%20MATLAB%20Central_files/jquery-ui-1.js" type="text/javascript"></script>
+<script src="File%20Exchange%20-%20MATLAB%20Central_files/jquery_ujs.js" type="text/javascript"></script>
+<script src="File%20Exchange%20-%20MATLAB%20Central_files/application.js" type="text/javascript"></script>
+<link href="File%20Exchange%20-%20MATLAB%20Central_files/application.css" media="screen" rel="stylesheet" type="text/css">
+<link href="http://www.mathworks.com/matlabcentral/fileexchange/16728-fingerprint-application/content/FingerPrint/html/fingerprint.html" rel="canonical">
+
+<link rel="search" type="application/opensearchdescription+xml" title="Search File Exchange" href="http://www.mathworks.com/matlabcentral/fileexchange/search.xml">
+
+
+  </head>
+    <body>
+      <div id="header">
+  <div class="wrapper">
+  <!--put nothing in left div - only 11px wide shadow --> 
+    <div class="main">
+        	<div id="logo"><a href="http://www.mathworks.com/matlabcentral/?s_tid=gn_mlc_logo" title="MATLAB Central Home"><img src="File%20Exchange%20-%20MATLAB%20Central_files/mlclogo-whitebgd.gif" alt="MATLAB Central"></a></div>
+      
+        <div id="headertools">
+        
+
+<script language="JavaScript1.3" type="text/javascript">
+
+function submitForm(query){
+
+	choice = document.forms['searchForm'].elements['search_submit'].value;
+	
+	if (choice == "entire1" || choice == "contest" || choice == "matlabcentral" || choice == "blogs"){
+	
+	   var newElem = document.createElement("input");
+	   newElem.type = "hidden";
+	   newElem.name = "q";
+	   newElem.value = query.value;
+	   document.forms['searchForm'].appendChild(newElem);
+	      
+	   submit_action = '/searchresults/';
+	}
+	
+	switch(choice){
+	   case "matlabcentral":
+	      var newElem = document.createElement("input");
+	      newElem.type = "hidden";
+	      newElem.name = "c[]";
+	      newElem.value = "matlabcentral";
+	      document.forms['searchForm'].appendChild(newElem);
+	
+	      selected_index = 0;
+	      break
+	   case "fileexchange":
+	      var newElem = document.createElement("input");
+	      newElem.type = "hidden";
+	      newElem.name = "term";
+	      newElem.value = query.value;
+	      newElem.classname = "formelem";
+	      document.forms['searchForm'].appendChild(newElem);
+	
+	      submit_action = "/matlabcentral/fileexchange/";
+	      selected_index = 1;
+	      break
+	   case "answers":
+	      var newElem = document.createElement("input");
+	      newElem.type = "hidden";
+	      newElem.name = "term";
+	      newElem.value = query.value;
+	      newElem.classname = "formelem";
+	      document.forms['searchForm'].appendChild(newElem);
+	
+	      submit_action = "/matlabcentral/answers/";
+	      selected_index = 2;
+	      break
+	   case "cssm":
+	      var newElem = document.createElement("input");
+	      newElem.type = "hidden";
+	      newElem.name = "search_string";
+	      newElem.value = query.value;
+	      newElem.classname = "formelem";
+	      document.forms['searchForm'].appendChild(newElem);
+	
+		  submit_action = "/matlabcentral/newsreader/search_results";
+	      selected_index = 3;
+	      break
+	   case "linkexchange":
+	      var newElem = document.createElement("input");
+	      newElem.type = "hidden";
+	      newElem.name = "term";
+	      newElem.value = query.value;
+	      newElem.classname = "formelem";
+	      document.forms['searchForm'].appendChild(newElem);
+	
+	      submit_action = "/matlabcentral/linkexchange/";
+	      selected_index = 4;
+	      break
+	   case "blogs":
+	      var newElem = document.createElement("input");
+	      newElem.type = "hidden";
+	      newElem.name = "c[]";
+	      newElem.value = "blogs";
+	      document.forms['searchForm'].appendChild(newElem);
+	
+	      selected_index = 5;
+	      break
+	   case "trendy":
+	      var newElem = document.createElement("input");
+	      newElem.type = "hidden";
+	      newElem.name = "search";
+	      newElem.value = query.value;
+	      newElem.classname = "formelem";
+	      document.forms['searchForm'].appendChild(newElem);
+	
+	      submit_action = "/matlabcentral/trendy";
+	      selected_index = 6;
+	      break
+	   case "cody":
+	      var newElem = document.createElement("input");
+	      newElem.type = "hidden";
+	      newElem.name = "term";
+	      newElem.value = query.value;
+	      newElem.classname = "formelem";
+	      document.forms['searchForm'].appendChild(newElem);
+	
+	      submit_action = "/matlabcentral/cody/";
+	      selected_index = 7;
+	      break
+	   case "contest":
+	      var newElem = document.createElement("input");
+	      newElem.type = "hidden";
+	      newElem.name = "c[]";
+	      newElem.value = "contest";
+	      document.forms['searchForm'].appendChild(newElem);
+	
+	      selected_index = 8;
+	      break
+	   case "entire1":
+	      var newElem = document.createElement("input");
+	      newElem.type = "hidden";
+	      newElem.name = "c[]";
+	      newElem.value = "entiresite";
+	      document.forms['searchForm'].appendChild(newElem);
+	      
+	      selected_index = 9;
+	      break
+	   default:
+	      var newElem = document.createElement("input");
+	      newElem.type = "hidden";
+	      newElem.name = "c[]";
+	      newElem.value = "entiresite";
+	      document.forms['searchForm'].appendChild(newElem);
+	   
+	      selected_index = 9;
+	      break
+	}
+
+	document.forms['searchForm'].elements['search_submit'].selectedIndex = selected_index;
+	document.forms['searchForm'].elements['query'].value = query.value;
+	document.forms['searchForm'].action = submit_action;
+}
+
+</script>
+
+
+  <form name="searchForm" method="GET" action="" style="margin:0px; margin-top:5px; font-size:90%" onsubmit="submitForm(query)">
+          <label for="search">Search: </label>
+        <select name="search_submit" style="font-size:9px ">
+         	 <option value="matlabcentral">MATLAB Central</option>
+          	<option value="fileexchange" selected="selected">&nbsp;&nbsp;&nbsp;File Exchange</option>
+          	<option value="answers">&nbsp;&nbsp;&nbsp;Answers</option>
+            <option value="cssm">&nbsp;&nbsp;&nbsp;Newsgroup</option>
+          	<option value="linkexchange">&nbsp;&nbsp;&nbsp;Link Exchange</option>
+          	<option value="blogs">&nbsp;&nbsp;&nbsp;Blogs</option>
+          	<option value="trendy">&nbsp;&nbsp;&nbsp;Trendy</option>
+          	<option value="cody">&nbsp;&nbsp;&nbsp;Cody</option>
+          	<option value="contest">&nbsp;&nbsp;&nbsp;Contest</option>
+          <option value="entire1">MathWorks.com</option>
+        </select>
+<input name="query" size="10" class="formelem" type="text">
+<input value="Go" class="formelem gobutton" type="submit">
+</form>
+
+		  <ol id="access2">
+  <li class="first">
+    <a href="https://www.mathworks.com/accesslogin/createProfile.do?uri=http%3A%2F%2Fwww.mathworks.com%2Fmatlabcentral%2Ffileexchange%2F16728-fingerprint-application%2Fcontent%2FFingerPrint%2Fhtml%2Ffingerprint" id="create_account_link">Create Account</a>
+  </li>
+  <li>
+    <a href="https://www.mathworks.com/accesslogin/index_fe.do?uri=http%3A%2F%2Fwww.mathworks.com%2Fmatlabcentral%2Ffileexchange%2F16728-fingerprint-application%2Fcontent%2FFingerPrint%2Fhtml%2Ffingerprint" id="login_link">Log In</a>
+  </li>
+</ol>
+
+
+      </div>
+	  
+        <div id="globalnav">
+        <!-- from includes/global_nav.html -->
+        <ol>
+                <li class=";">
+                        <a href="http://www.mathworks.com/matlabcentral/fileexchange/?s_tid=gn_mlc_fx">File Exchange</a> 
+                </li>
+                <li class=";">
+                        <a href="http://www.mathworks.com/matlabcentral/answers/?s_tid=gn_mlc_an">Answers</a> 
+                </li>
+                <li class=";">
+                        <a href="http://www.mathworks.com/matlabcentral/newsreader/?s_tid=gn_mlc_ng">Newsgroup</a> 
+                </li>
+                <li class=";">
+                        <a href="http://www.mathworks.com/matlabcentral/linkexchange/?s_tid=gn_mlc_lx">Link Exchange</a> 
+                </li>
+                <li class=";">
+                        <a href="http://blogs.mathworks.com/?s_tid=gn_mlc_blg">Blogs</a> 
+                </li>
+                <li class=";">
+                        <a href="http://www.mathworks.com/matlabcentral/trendy/?s_tid=gn_mlc_tnd">Trendy</a> 
+                </li>
+                <li class=";">
+                        <a href="http://www.mathworks.com/matlabcentral/cody/?s_tid=gn_mlc_cody">Cody</a> 
+                </li>
+                <li class=";">
+                        <a href="http://www.mathworks.com/matlabcentral/contest/?s_tid=gn_mlc_cn">Contest</a> 
+                </li>
+                <li class="icon mathworks">
+                        <a href="http://www.mathworks.com/?s_tid=gn_mlc_main">MathWorks.com</a> 
+                </li>
+        </ol>
+      </div>
+    </div>
+  </div>
+</div>
+
+      <div id="middle">
+  <div class="wrapper">
+
+    <div id="mainbody" class="columns2">
+  
+  
+
+  <div class="manifest">
+    <div class="ctaBtn ctaBlueBtn btnSmall">
+            <div id="download_submission_button" class="btnCont">
+              <div class="btn download"><a href="http://www.mathworks.com/matlabcentral/fileexchange/downloads/80824/download" itemprop="downloadUrl" title="Download Now">Download Submission</a></div>
+            </div>
+          </div>
+
+    <p class="license">
+      No BSD License
+      <a href="http://www.mathworks.com/matlabcentral/fileexchange/help_license#nolicense" class="info notext preview_help" onclick="window.open(this.href,'small','toolbar=no,resizable=yes,status=yes,menu=no,scrollbars=yes,width=600,height=550');return false;">&nbsp;</a>
+  </p>
+
+
+    <h3 class="highlights_title">Highlights from <br>
+    <a href="http://www.mathworks.com/matlabcentral/fileexchange/16728-fingerprint-application" class="manifest_title">FingerPrint Application</a>
+  </h3>
+  <ul class="manifest">
+      <li class="manifest"><a href="http://www.mathworks.com/matlabcentral/fileexchange/16728-fingerprint-application/content/FingerPrint/html/fingerprint.html" class="example" title="Example">FingerPrint Demo</a></li>
+      <li class="manifest"><a href="http://www.mathworks.com/matlabcentral/fileexchange/16728-fingerprint-application/content/FingerPrint/DistEuclidian.m" class="function" title="Function">D=DistEuclidian(dataset1,...</a></li>
+      <li class="manifest"><a href="http://www.mathworks.com/matlabcentral/fileexchange/16728-fingerprint-application/content/FingerPrint/FingerPrintGUI.m" class="function" title="Function">FingerPrintGUI(varargin)</a><span class="description">FINGERPRINTGUI M-file for FingerPrintGUI.fig</span></li>
+      <li class="manifest"><a href="http://www.mathworks.com/matlabcentral/fileexchange/16728-fingerprint-application/content/FingerPrint/ValidationGUI.m" class="function" title="Function">ValidationGUI(varargin)</a><span class="description">VALIDATIONGUI M-file for ValidationGUI.fig</span></li>
+      <li class="manifest"><a href="http://www.mathworks.com/matlabcentral/fileexchange/16728-fingerprint-application/content/FingerPrint/lissage.m" class="function" title="Function">lissage(x)
+</a></li>
+      <li class="manifest"><a href="http://www.mathworks.com/matlabcentral/fileexchange/16728-fingerprint-application/content/FingerPrint/saveMinutia.m" class="function" title="Function">saveMinutia(name,MinutiaF...</a></li>
+      <li class="manifest"><a href="http://www.mathworks.com/matlabcentral/fileexchange/16728-fingerprint-application/content/FingerPrint/minutie.m" class="function" title="Function">y=minutie(x)
+</a></li>
+    <li class="manifest_allfiles">
+      <a href="http://www.mathworks.com/matlabcentral/fileexchange/16728-fingerprint-application/content/ingerPrint.zip" id="view_all_files">View all files</a>
+    </li>
+  </ul>
+
+</div>
+
+
+  <table class="details file contents" cellpadding="0" cellspacing="0">
+    <tbody><tr>
+      <th class="maininfo">
+        
+  <div id="thumbnail" style="padding-bottom: 3px;">
+    <a href="http://www.mathworks.com/matlabcentral/fileexchange/screenshots/1865/original.jpg" border="0"><img itemprop="image" src="File%20Exchange%20-%20MATLAB%20Central_files/preview.jpg" alt="image thumbnail" width="100"></a>
+  </div>
+
+
+<div id="details">
+  <h1 itemprop="name">FingerPrint Application</h1>
+  <p id="author">
+    by 
+    <span itemprop="author" itemscope="" itemtype="http://schema.org/Person">
+      <span itemprop="name"><a href="http://www.mathworks.com/matlabcentral/fileexchange/authors/26290">Florence Kussener</a></span>
+    </span>
+  </p>
+  <p>&nbsp;</p>
+  <p>
+    <span id="submissiondate">
+      05 Oct 2007
+    </span>
+      <span id="date_updated">(Updated 
+        <span itemprop="datePublished" content="2008-01-16">16 Jan 2008</span>)
+      </span>
+  </p>
+
+  <p id="summary">Capture the Minutiae from a fingerprint</p>
+
+
+  
+</div>
+
+        
+      </th>
+    </tr>
+    <tr>
+      <td class="file">
+        <table class="fileview section" border="0" cellpadding="0" cellspacing="0">
+          <tbody><tr class="title">
+            <th><span class="heading">FingerPrint Demo</span></th>
+          </tr>
+          <tr>
+            <td>
+              
+              <div id="example">
+      <div class="content">
+         <h1>FingerPrint Demo</h1>
+         <introduction>
+            <p>If manual comparison by a fingerprint expert is always done to say if two fingerprint images are coming from the same finger
+               in critical cases, automated methods are widely used now.
+            </p>
+            <p>Among all the biometric techniques, fingerprint-based 
+identification is the oldest method which has been successfully used
+               in numerous applications. Everyone is known to have 
+unique, immutable fingerprints. A fingerprint is made of a series of 
+ridges
+               and furrows on the surface of the finger. The uniqueness 
+of a fingerprint can be determined by the pattern of ridges and furrows
+               as well as the minutiae points. Minutiae points are local
+ ridge characteristics that occur at either a ridge bifurcation or
+               a ridge ending.
+            </p>
+         </introduction>
+         <h2>Contents</h2>
+         <div>
+            <ul>
+               <li><a href="#3">Load image</a></li>
+               <li><a href="#4">Enhancement</a></li>
+               <li><a href="#5">Binarize</a></li>
+               <li><a href="#6">Thining</a></li>
+               <li><a href="#7">Minutiae</a></li>
+               <li><a href="#8">Termination</a></li>
+               <li><a href="#9">Bifurcation</a></li>
+               <li><a href="#10">Remarks</a></li>
+               <li><a href="#11">Process 1</a></li>
+               <li><a href="#12">Process 2</a></li>
+               <li><a href="#13">Process 3</a></li>
+               <li><a href="#15">ROI</a></li>
+               <li><a href="#17">Suppress extrema minutiae</a></li>
+               <li><a href="#18">Orientation</a></li>
+               <li><a href="#19">Termination Orientation</a></li>
+               <li><a href="#20">Bifurcation Orientation</a></li>
+               <li><a href="#21">Validation</a></li>
+               <li><a href="#22">Save in a text file</a></li>
+               <li><a href="#23">Minutia Match</a></li>
+               <li><a href="#24">GUI</a></li>
+            </ul>
+         </div>
+         <p>Florence Kussener, The MathWorks Application Engineer August 2007</p><pre class="codeinput">clear <span class="string">all</span>,close <span class="string">all</span>,clc
+</pre><h2>Load image<a name="3"></a></h2>
+         <p>The general shape of the fingerprint is generally used to 
+pre-process the images, and reduce the search in large databases.
+            This uses the general directions of the lines of the 
+fingerprint, and the presence of the core and the delta. Several 
+categories
+            have been defined in the Henry system: whorl, right loop, 
+left loop, arch, and tented arch.
+         </p>
+         <p>Most algorithms are using minutiae, the specific points like ridges ending, bifurcation... Only the position and direction
+            of these features are stored in the signature for further comparison.
+         </p><pre class="codeinput">I=imread(<span class="string">'Empreinte.bmp'</span>);
+imshow(I)
+set(gcf,<span class="string">'position'</span>,[1 1 600 600]);
+</pre><img src="File%20Exchange%20-%20MATLAB%20Central_files/fingerprint_01.png" hspace="5" vspace="5"> <h2>Enhancement<a name="4"></a></h2>
+         <p>A critical step in automatic fingerprint matching is to 
+automatically and reliably extract minutiae from the input fingerprint
+            images. However, the performance of a minutiae extraction 
+algorithm relies heavily on the quality of the input fingerprint
+            images. In order to ensure that the performance of an 
+automatic fingerprint identification/verification system would be robust
+            with respect to the quality of the fingerprint images, it 
+xould be essential to incorporate a fingerprint enhancement algorithm
+            in the minutiae extraction module.
+         </p>
+         <p>In our case, the quality of the image is really good, and we wwon't need to enhance our image.</p>
+         <h2>Binarize<a name="5"></a></h2>
+         <p>We binarize the image. After the operation, ridges in the fingerprint are highlighted with black color while furrow are white.</p><pre class="codeinput">J=I(:,:,1)&gt;160;
+imshow(J)
+set(gcf,<span class="string">'position'</span>,[1 1 600 600]);
+</pre><img src="File%20Exchange%20-%20MATLAB%20Central_files/fingerprint_02.png" hspace="5" vspace="5"> <h2>Thining<a name="6"></a></h2>
+         <p>Ridge thining is to eliminate the redundant pixels of ridges till the ridges are just one pixel wide.</p><pre class="codeinput">K=bwmorph(~J,<span class="string">'thin'</span>,<span class="string">'inf'</span>);
+imshow(~K)
+set(gcf,<span class="string">'position'</span>,[1 1 600 600]);
+</pre><img src="File%20Exchange%20-%20MATLAB%20Central_files/fingerprint_03.png" hspace="5" vspace="5"> <h2>Minutiae<a name="7"></a></h2>
+         <p>We filter the thinned ridge map by the filter "minutie". 
+"minutie" compute the number of one-value of each 3x3 window: * if
+            the central is 1 and has only 1 one-value neighbor, then the
+ central pixel is a termination. * if the central is 1 and has
+            3 one-value neighbor, then the central pixel is a 
+bifurcation. * if the central is 1 and has 2 one-value neighbor, then 
+the
+            central pixel is a usual pixel.
+         </p><pre class="codeinput">fun=@minutie;
+L = nlfilter(K,[3 3],fun);
+</pre><h2>Termination<a name="8"></a></h2><pre class="codeinput">LTerm=(L==1);
+imshow(LTerm)
+LTermLab=bwlabel(LTerm);
+propTerm=regionprops(LTermLab,<span class="string">'Centroid'</span>);
+CentroidTerm=round(cat(1,propTerm(:).Centroid));
+imshow(~K)
+set(gcf,<span class="string">'position'</span>,[1 1 600 600]);
+hold <span class="string">on</span>
+plot(CentroidTerm(:,1),CentroidTerm(:,2),<span class="string">'ro'</span>)
+</pre><img src="File%20Exchange%20-%20MATLAB%20Central_files/fingerprint_04.png" hspace="5" vspace="5"> <h2>Bifurcation<a name="9"></a></h2><pre class="codeinput">LBif=(L==3);
+LBifLab=bwlabel(LBif);
+propBif=regionprops(LBifLab,<span class="string">'Centroid'</span>,<span class="string">'Image'</span>);
+CentroidBif=round(cat(1,propBif(:).Centroid));
+plot(CentroidBif(:,1),CentroidBif(:,2),<span class="string">'go'</span>)
+</pre><img src="File%20Exchange%20-%20MATLAB%20Central_files/fingerprint_05.png" hspace="5" vspace="5"> <h2>Remarks<a name="10"></a></h2>
+         <p>We have a lot of spurious minutae. We are going to process 
+them. process 1: if the distance between a termination and a 
+biffurcation
+            is smaller than D, we remove this minutiae process 2: if the
+ distance between two biffurcations is smaller than D, we remove
+            this minutia process 3: if the distance between two 
+terminations is smaller than D, we remove this minutia
+         </p><pre class="codeinput">D=6;
+</pre><h2>Process 1<a name="11"></a></h2><pre class="codeinput">Distance=DistEuclidian(CentroidBif,CentroidTerm);
+SpuriousMinutae=Distance&lt;D;
+[i,j]=find(SpuriousMinutae);
+CentroidBif(i,:)=[];
+CentroidTerm(j,:)=[];
+</pre><h2>Process 2<a name="12"></a></h2><pre class="codeinput">Distance=DistEuclidian(CentroidBif);
+SpuriousMinutae=Distance&lt;D;
+[i,j]=find(SpuriousMinutae);
+CentroidBif(i,:)=[];
+</pre><h2>Process 3<a name="13"></a></h2><pre class="codeinput">Distance=DistEuclidian(CentroidTerm);
+SpuriousMinutae=Distance&lt;D;
+[i,j]=find(SpuriousMinutae);
+CentroidTerm(i,:)=[];
+</pre><pre class="codeinput">hold <span class="string">off</span>
+imshow(~K)
+hold <span class="string">on</span>
+plot(CentroidTerm(:,1),CentroidTerm(:,2),<span class="string">'ro'</span>)
+plot(CentroidBif(:,1),CentroidBif(:,2),<span class="string">'go'</span>)
+hold <span class="string">off</span>
+</pre><img src="File%20Exchange%20-%20MATLAB%20Central_files/fingerprint_06.png" hspace="5" vspace="5"> <h2>ROI<a name="15"></a></h2>
+         <p>We have to determine a ROI. For that, we consider the binary image, and we aply an closing on this image and an erosion. With
+            the GUI, I allow the use of ROI tools of MATLAB, to define manually the ROI.
+         </p><pre class="codeinput">Kopen=imclose(K,strel(<span class="string">'square'</span>,7));
+
+KopenClean= imfill(Kopen,<span class="string">'holes'</span>);
+KopenClean=bwareaopen(KopenClean,5);
+imshow(KopenClean)
+KopenClean([1 end],:)=0;
+KopenClean(:,[1 end])=0;
+ROI=imerode(KopenClean,strel(<span class="string">'disk'</span>,10));
+imshow(ROI)
+</pre><img src="File%20Exchange%20-%20MATLAB%20Central_files/fingerprint_07.png" hspace="5" vspace="5"> <pre class="codeinput">imshow(I)
+hold <span class="string">on</span>
+imshow(ROI)
+alpha(0.5)
+
+hold <span class="string">on</span>
+plot(CentroidTerm(:,1),CentroidTerm(:,2),<span class="string">'ro'</span>)
+plot(CentroidBif(:,1),CentroidBif(:,2),<span class="string">'go'</span>)
+hold <span class="string">off</span>
+</pre><img src="File%20Exchange%20-%20MATLAB%20Central_files/fingerprint_08.png" hspace="5" vspace="5"> <h2>Suppress extrema minutiae<a name="17"></a></h2>
+         <p>Once we defined the ROI, we can suppress minutiae external to this ROI.</p><pre class="codeinput">[m,n]=size(I(:,:,1));
+indTerm=sub2ind([m,n],CentroidTerm(:,1),CentroidTerm(:,2));
+Z=zeros(m,n);
+Z(indTerm)=1;
+ZTerm=Z.*ROI';
+[CentroidTermX,CentroidTermY]=find(ZTerm);
+
+indBif=sub2ind([m,n],CentroidBif(:,1),CentroidBif(:,2));
+Z=zeros(m,n);
+Z(indBif)=1;
+ZBif=Z.*ROI';
+[CentroidBifX,CentroidBifY]=find(ZBif);
+
+
+
+imshow(I)
+hold <span class="string">on</span>
+plot(CentroidTermX,CentroidTermY,<span class="string">'ro'</span>,<span class="string">'linewidth'</span>,2)
+plot(CentroidBifX,CentroidBifY,<span class="string">'go'</span>,<span class="string">'linewidth'</span>,2)
+</pre><img src="File%20Exchange%20-%20MATLAB%20Central_files/fingerprint_09.png" hspace="5" vspace="5"> <h2>Orientation<a name="18"></a></h2>
+         <p>Once we determined the differents minutiae, we have to find the orientation of each one</p><pre class="codeinput">Table=[3*pi/4 2*pi/3 pi/2 pi/3 pi/4
+       5*pi/6 0 0 0 pi/6
+       pi 0 0 0 0
+      -5*pi/6 0 0 0 -pi/6
+      -3*pi/4 -2*pi/3 -pi/2 -pi/3 -pi/4];
+</pre><h2>Termination Orientation<a name="19"></a></h2>
+         <p>We have to find the orientation of the termination. For 
+finding that, we analyze the position of the pixel on the boundary
+            of a 5 x 5 bounding box of the termination. We compare this 
+position to the Table variable. The Table variable gives the angle
+            in radian.
+         </p><pre class="codeinput"><span class="keyword">for</span> ind=1:length(CentroidTermX)
+    Klocal=K(CentroidTermY(ind)-2:CentroidTermY(ind)+2,CentroidTermX(ind)-2:CentroidTermX(ind)+2);
+    Klocal(2:end-1,2:end-1)=0;
+    [i,j]=find(Klocal);
+    OrientationTerm(ind,1)=Table(i,j);
+<span class="keyword">end</span>
+dxTerm=sin(OrientationTerm)*5;
+dyTerm=cos(OrientationTerm)*5;
+figure
+imshow(K)
+set(gcf,<span class="string">'position'</span>,[1 1 600 600]);
+hold <span class="string">on</span>
+plot(CentroidTermX,CentroidTermY,<span class="string">'ro'</span>,<span class="string">'linewidth'</span>,2)
+plot([CentroidTermX CentroidTermX+dyTerm]',<span class="keyword">...</span>
+    [CentroidTermY CentroidTermY-dxTerm]',<span class="string">'r'</span>,<span class="string">'linewidth'</span>,2)
+</pre><img src="File%20Exchange%20-%20MATLAB%20Central_files/fingerprint_10.png" hspace="5" vspace="5"> <h2>Bifurcation Orientation<a name="20"></a></h2><pre>For each bifurcation, we have three lines. So we operate the same
+process than in termination case three times.</pre><pre class="codeinput"><span class="keyword">for</span> ind=1:length(CentroidBifX)
+    Klocal=K(CentroidBifY(ind)-2:CentroidBifY(ind)+2,CentroidBifX(ind)-2:CentroidBifX(ind)+2);
+    Klocal(2:end-1,2:end-1)=0;
+    [i,j]=find(Klocal);
+    <span class="keyword">if</span> length(i)~=3
+        CentroidBifY(ind)=NaN;
+        CentroidBifX(ind)=NaN;
+        OrientationBif(ind)=NaN;
+    <span class="keyword">else</span>
+        <span class="keyword">for</span> k=1:3
+            OrientationBif(ind,k)=Table(i(k),j(k));
+            dxBif(ind,k)=sin(OrientationBif(ind,k))*5;
+            dyBif(ind,k)=cos(OrientationBif(ind,k))*5;
+
+        <span class="keyword">end</span>
+    <span class="keyword">end</span>
+<span class="keyword">end</span>
+
+plot(CentroidBifX,CentroidBifY,<span class="string">'go'</span>,<span class="string">'linewidth'</span>,2)
+OrientationLinesX=[CentroidBifX CentroidBifX+dyBif(:,1);CentroidBifX CentroidBifX+dyBif(:,2);CentroidBifX CentroidBifX+dyBif(:,3)]';
+OrientationLinesY=[CentroidBifY CentroidBifY-dxBif(:,1);CentroidBifY CentroidBifY-dxBif(:,2);CentroidBifY CentroidBifY-dxBif(:,3)]';
+plot(OrientationLinesX,OrientationLinesY,<span class="string">'g'</span>,<span class="string">'linewidth'</span>,2)
+</pre><img src="File%20Exchange%20-%20MATLAB%20Central_files/fingerprint_11.png" hspace="5" vspace="5"> <h2>Validation<a name="21"></a></h2>
+         <p>In this step, we validate the minutiae (cf GUI)</p>
+         <h2>Save in a text file<a name="22"></a></h2>
+         <p>In this step, we are going to save the minutia in a file</p><pre class="codeinput">MinutiaTerm=[CentroidTermX,CentroidTermY,OrientationTerm];
+MinutiaBif=[CentroidBifX,CentroidBifY,OrientationBif];
+saveMinutia(<span class="string">'John Doe'</span>,MinutiaTerm,MinutiaBif);
+</pre><h2>Minutia Match<a name="23"></a></h2>
+         <p>Given two set of minutia of two fingerprint images, the minutia match algorithm determines whether the two minutia sets are
+            from the same finger or not. two steps: 1. Alignment stage 2. Match stage
+         </p>
+         <p>For this step, I would need a database I don't have...</p>
+         <h2>GUI<a name="24"></a></h2>
+         <p>TODO: créer le GUI associé</p>
+         <p class="footer"><br>
+            Published with MATLAB® 7.5<br></p>
+      </div>
+      <!--
+##### SOURCE BEGIN #####
+%% FingerPrint Demo
+% If manual comparison by a fingerprint expert is always done to say if two 
+% fingerprint images are coming from the same finger in critical cases, 
+% automated methods are widely used now. 
+%
+% Among all the biometric techniques, fingerprint-based identification is 
+% the oldest method which has been successfully used in numerous applications. 
+% Everyone is known to have unique, immutable fingerprints. A fingerprint 
+% is made of a series of ridges and furrows on the surface of the finger. 
+% The uniqueness of a fingerprint can be determined by the pattern of ridges 
+% and furrows as well as the minutiae points. Minutiae points are local ridge 
+% characteristics that occur at either a ridge bifurcation or a ridge
+% ending.
+
+%%
+% Florence Kussener, The MathWorks 
+% Application Engineer
+% August 2007
+%%
+
+clear all,close all,clc
+%% Load image
+% The general shape of the fingerprint is generally used to pre-process the
+% images, and reduce the search in large databases. This uses the general 
+% directions of the lines of the fingerprint, and the presence of the core 
+% and the delta. Several categories have been defined in the Henry system: 
+% whorl, right loop, left loop, arch, and tented arch. 
+%
+% Most algorithms are using minutiae, the specific points like ridges
+% ending, bifurcation... Only the position and direction of these features 
+% are stored in the signature for further comparison.
+I=imread('Empreinte.bmp');
+imshow(I)
+set(gcf,'position',[1 1 600 600]);
+
+%% Enhancement
+% A critical step in automatic fingerprint matching is to automatically and 
+% reliably extract minutiae from the input fingerprint images. However, the 
+% performance of a minutiae extraction algorithm relies heavily on the 
+% quality of the input fingerprint images. In order to ensure that the 
+% performance of an automatic fingerprint identification/verification system 
+% would be robust with respect to the quality of the fingerprint images, it 
+% xould be essential to incorporate a fingerprint enhancement algorithm in the 
+% minutiae extraction module.
+%
+% In our case, the quality of the image is really good, and we wwon't need
+% to enhance our image. 
+
+
+%% Binarize
+% We binarize the image. After the operation, ridges in the fingerprint are
+% highlighted with black color while furrow are white.
+J=I(:,:,1)>160;
+imshow(J)
+set(gcf,'position',[1 1 600 600]);
+
+%% Thining
+% Ridge thining is to eliminate the redundant pixels of ridges till the 
+% ridges are just one pixel wide.  
+K=bwmorph(~J,'thin','inf');
+imshow(~K)
+set(gcf,'position',[1 1 600 600]);
+%% Minutiae
+% We filter the thinned ridge map by the filter "minutie". "minutie"
+% compute the number of one-value of each 3x3 window:
+% * if the central is 1 and has only 1 one-value neighbor, then the central 
+% pixel is a termination.  
+% * if the central is 1 and has 3 one-value neighbor, then the central 
+% pixel is a bifurcation. 
+% * if the central is 1 and has 2 one-value neighbor, then the central 
+% pixel is a usual pixel. 
+fun=@minutie;
+L = nlfilter(K,[3 3],fun);
+
+%% Termination
+LTerm=(L==1);
+imshow(LTerm)
+LTermLab=bwlabel(LTerm);
+propTerm=regionprops(LTermLab,'Centroid');
+CentroidTerm=round(cat(1,propTerm(:).Centroid));
+imshow(~K)
+set(gcf,'position',[1 1 600 600]);
+hold on
+plot(CentroidTerm(:,1),CentroidTerm(:,2),'ro')
+
+%% Bifurcation
+LBif=(L==3);
+LBifLab=bwlabel(LBif);
+propBif=regionprops(LBifLab,'Centroid','Image');
+CentroidBif=round(cat(1,propBif(:).Centroid));
+plot(CentroidBif(:,1),CentroidBif(:,2),'go')
+%% Remarks
+% We have a lot of spurious minutae. 
+% We are going to process them. 
+% process 1: if the distance between a termination and a biffurcation is
+% smaller than D, we remove this minutiae
+% process 2: if the distance between two biffurcations is
+% smaller than D, we remove this minutia
+% process 3: if the distance between two terminations is
+% smaller than D, we remove this minutia
+D=6;
+%% Process 1
+Distance=DistEuclidian(CentroidBif,CentroidTerm);
+SpuriousMinutae=Distance<D;
+[i,j]=find(SpuriousMinutae);
+CentroidBif(i,:)=[];
+CentroidTerm(j,:)=[];
+
+%% Process 2
+Distance=DistEuclidian(CentroidBif);
+SpuriousMinutae=Distance<D;
+[i,j]=find(SpuriousMinutae);
+CentroidBif(i,:)=[];
+
+
+%% Process 3
+Distance=DistEuclidian(CentroidTerm);
+SpuriousMinutae=Distance<D;
+[i,j]=find(SpuriousMinutae);
+CentroidTerm(i,:)=[];
+%%
+
+hold off
+imshow(~K)
+hold on
+plot(CentroidTerm(:,1),CentroidTerm(:,2),'ro')
+plot(CentroidBif(:,1),CentroidBif(:,2),'go')
+hold off
+
+
+%% ROI
+% We have to determine a ROI. For that, we consider the binary image, and
+% we aply an closing on this image and an erosion. 
+% With the GUI, I allow the use of ROI tools of MATLAB, to define manually
+% the ROI.
+
+Kopen=imclose(K,strel('square',7));
+
+KopenClean= imfill(Kopen,'holes');
+KopenClean=bwareaopen(KopenClean,5);
+imshow(KopenClean)
+KopenClean([1 end],:)=0;
+KopenClean(:,[1 end])=0;
+ROI=imerode(KopenClean,strel('disk',10));
+imshow(ROI)
+
+%% 
+
+imshow(I)
+hold on
+imshow(ROI)
+alpha(0.5)
+
+hold on
+plot(CentroidTerm(:,1),CentroidTerm(:,2),'ro')
+plot(CentroidBif(:,1),CentroidBif(:,2),'go')
+hold off
+
+%% Suppress extrema minutiae
+% Once we defined the ROI, we can suppress minutiae external to this ROI.
+[m,n]=size(I(:,:,1));
+indTerm=sub2ind([m,n],CentroidTerm(:,1),CentroidTerm(:,2));
+Z=zeros(m,n);
+Z(indTerm)=1;
+ZTerm=Z.*ROI';
+[CentroidTermX,CentroidTermY]=find(ZTerm);
+
+indBif=sub2ind([m,n],CentroidBif(:,1),CentroidBif(:,2));
+Z=zeros(m,n);
+Z(indBif)=1;
+ZBif=Z.*ROI';
+[CentroidBifX,CentroidBifY]=find(ZBif);
+
+
+
+imshow(I)
+hold on
+plot(CentroidTermX,CentroidTermY,'ro','linewidth',2)
+plot(CentroidBifX,CentroidBifY,'go','linewidth',2)
+
+
+%% Orientation
+% Once we determined the differents minutiae, we have to find the
+% orientation of each one
+Table=[3*pi/4 2*pi/3 pi/2 pi/3 pi/4 
+       5*pi/6 0 0 0 pi/6
+       pi 0 0 0 0
+      -5*pi/6 0 0 0 -pi/6
+      -3*pi/4 -2*pi/3 -pi/2 -pi/3 -pi/4];
+%% Termination Orientation 
+% We have to find the orientation of the termination. 
+% For finding that, we analyze the position of the pixel on the boundary of
+% a 5 x 5 bounding box of the termination. We compare this position to the
+% Table variable. The Table variable gives the angle in radian.
+for ind=1:length(CentroidTermX)
+    Klocal=K(CentroidTermY(ind)-2:CentroidTermY(ind)+2,CentroidTermX(ind)-2:CentroidTermX(ind)+2);
+    Klocal(2:end-1,2:end-1)=0;
+    [i,j]=find(Klocal);
+    OrientationTerm(ind,1)=Table(i,j);
+end
+dxTerm=sin(OrientationTerm)*5;
+dyTerm=cos(OrientationTerm)*5;
+figure
+imshow(K)
+set(gcf,'position',[1 1 600 600]);
+hold on
+plot(CentroidTermX,CentroidTermY,'ro','linewidth',2)
+plot([CentroidTermX CentroidTermX+dyTerm]',...
+    [CentroidTermY CentroidTermY-dxTerm]','r','linewidth',2)
+
+
+%% Bifurcation Orientation
+%  For each bifurcation, we have three lines. So we operate the same
+%  process than in termination case three times.
+for ind=1:length(CentroidBifX)
+    Klocal=K(CentroidBifY(ind)-2:CentroidBifY(ind)+2,CentroidBifX(ind)-2:CentroidBifX(ind)+2);
+    Klocal(2:end-1,2:end-1)=0;
+    [i,j]=find(Klocal);
+    if length(i)~=3
+        CentroidBifY(ind)=NaN;
+        CentroidBifX(ind)=NaN;
+        OrientationBif(ind)=NaN;
+    else
+        for k=1:3
+            OrientationBif(ind,k)=Table(i(k),j(k));
+            dxBif(ind,k)=sin(OrientationBif(ind,k))*5;
+            dyBif(ind,k)=cos(OrientationBif(ind,k))*5;
+
+        end
+    end
+end
+
+plot(CentroidBifX,CentroidBifY,'go','linewidth',2)
+OrientationLinesX=[CentroidBifX CentroidBifX+dyBif(:,1);CentroidBifX CentroidBifX+dyBif(:,2);CentroidBifX CentroidBifX+dyBif(:,3)]';
+OrientationLinesY=[CentroidBifY CentroidBifY-dxBif(:,1);CentroidBifY CentroidBifY-dxBif(:,2);CentroidBifY CentroidBifY-dxBif(:,3)]';
+plot(OrientationLinesX,OrientationLinesY,'g','linewidth',2)
+%% Validation
+% In this step, we validate the minutiae (cf GUI)
+
+%% Save in a text file
+% In this step, we are going to save the minutia in a file
+MinutiaTerm=[CentroidTermX,CentroidTermY,OrientationTerm];
+MinutiaBif=[CentroidBifX,CentroidBifY,OrientationBif];
+saveMinutia('John Doe',MinutiaTerm,MinutiaBif);
+
+%% Minutia Match
+% Given two set of minutia of two fingerprint images, the minutia match
+% algorithm determines whether the two minutia sets are from the same
+% finger or not. 
+% two steps:
+% 1. Alignment stage
+% 2. Match stage
+%
+% For this step, I would need a database I don't have...
+
+%% GUI
+% TODO: créer le GUI associé
+
+##### SOURCE END #####
+-->
+   </div>
+            </td>
+          </tr>
+        </tbody></table>
+      </td>
+    </tr>
+
+  </tbody></table>
+
+
+<p id="contactus"><a href="http://www.mathworks.com/company/feedback/">Contact us</a></p>
+
+      
+</div>
+<div class="clearboth">&nbsp;</div>
+</div>
+</div>
+<!-- footer.html -->
+<!-- START OF FOOTER -->
+
+<div id="mlc-footer">
+  <script type="text/javascript">
+function clickDynamic(obj, target_url, tracking_code) {
+	var pos=target_url.indexOf("?");
+	if (pos<=0) { 
+		var linkComponents = target_url + tracking_code;
+		obj.href=linkComponents;
+	} 
+}
+</script>
+  <div class="wrapper">
+    <div>
+      <ul id="matlabcentral">
+        <li class="copyright first">© 1994-2014 The MathWorks, Inc.</li>
+        <li class="first"><a href="http://www.mathworks.com/help.html" title="Site Help">Site Help</a></li>
+        <li><a href="http://www.mathworks.com/company/aboutus/policies_statements/patents.html" title="patents" rel="nofollow">Patents</a></li>
+        <li><a href="http://www.mathworks.com/company/aboutus/policies_statements/trademarks.html" title="trademarks" rel="nofollow">Trademarks</a></li>
+        <li><a href="http://www.mathworks.com/company/aboutus/policies_statements/" title="privacy policy" rel="nofollow">Privacy Policy</a></li>
+        <li><a href="http://www.mathworks.com/company/aboutus/policies_statements/piracy.html" title="preventing piracy" rel="nofollow">Preventing Piracy</a></li>
+        <li class="last"><a href="http://www.mathworks.com/matlabcentral/termsofuse.html" title="Terms of Use" rel="nofollow">Terms of Use</a></li>
+        <li class="icon"><a href="http://www.mathworks.com/company/rss/" title="RSS" class="rssfeed" rel="nofollow"><span class="text">RSS</span></a></li>
+        <li class="icon"><a href="http://www.mathworks.com/programs/bounce_hub_generic.html?s_tid=mlc_lkd&amp;url=http://www.linkedin.com/company/the-mathworks_2" title="LinkedIn" class="linkedin" rel="nofollow" target="_blank"></a></li>
+        <li class="icon"><a href="http://www.mathworks.com/programs/bounce_hub_generic.html?s_tid=mlc_fbk&amp;url=https://plus.google.com/117177960465154322866?prsrc=3" title="Google+" class="google" rel="nofollow" target="_blank"><span class="text">Google+</span></a></li>
+        <li class="icon"><a href="http://www.mathworks.com/programs/bounce_hub_generic.html?s_tid=mlc_fbk&amp;url=http://www.facebook.com/MATLAB" title="Facebook" class="facebook" rel="nofollow" target="_blank"><span class="text">Facebook</span></a></li>
+        		<li class="last icon"><a href="http://www.mathworks.com/programs/bounce_hub_generic.html?s_tid=mlc_twt&amp;url=http://www.twitter.com/MATLAB" title="Twitter" class="twitter" rel="nofollow" target="_blank"><span class="text">Twitter</span></a></li>        
+        
+      </ul>
+      <ul id="mathworks">
+        <li class="first sectionhead">Featured MathWorks.com Topics:</li>
+        <li class="first"><a href="http://www.mathworks.com/products/new_products/latest_features.html" onclick="clickDynamic(this, this.href, '?s_cid=MLC_new')">New Products</a></li>
+        <li><a href="http://www.mathworks.com/support/" title="support" onclick="clickDynamic(this, this.href, '?s_cid=MLC_support')">Support</a></li>
+        <li><a href="http://www.mathworks.com/help" title="documentation" onclick="clickDynamic(this, this.href, '?s_cid=MLC_doc')">Documentation</a></li>
+        <li><a href="http://www.mathworks.com/services/training/" title="training" onclick="clickDynamic(this, this.href, '?s_cid=MLC_training')">Training</a></li>
+        <li><a href="http://www.mathworks.com/company/events/webinars/" title="Webinars" onclick="clickDynamic(this, this.href, '?s_cid=MLC_webinars')">Webinars</a></li>
+        <li><a href="http://www.mathworks.com/company/newsletters/" title="newsletters" onclick="clickDynamic(this, this.href, '?s_cid=MLC_newsletters')">Newsletters</a></li>
+        <li><a href="http://www.mathworks.com/programs/trials/trial_request.html?prodcode=ML&amp;s_cid=MLC_trials" title="MATLAB Trials">MATLAB Trials</a></li>
+        
+        		<li class="last"><a href="http://www.mathworks.com/company/jobs/opportunities/index_en_US.html" title="Careers" onclick="clickDynamic(this, this.href, '?s_cid=MLC_careers')">Careers</a></li>
+                 
+      </ul>
+    </div>
+  </div>
+</div>
+<!-- END OF FOOTER -->
+
+
+      
+      
+<!-- SiteCatalyst code version: H.24.4.
+Copyright 1996-2012 Adobe, Inc. All Rights Reserved
+More info available at http://www.omniture.com -->
+<script language="JavaScript" type="text/javascript" src="File%20Exchange%20-%20MATLAB%20Central_files/s_code.js"></script>
+
+
+<script language="JavaScript" type="text/javascript">
+
+
+
+<!--
+/************* DO NOT ALTER ANYTHING BELOW THIS LINE ! **************/
+var s_code=s.t();if(s_code)document.write(s_code)//--></script>
+<script language="JavaScript" type="text/javascript"><!--
+if(navigator.appVersion.indexOf('MSIE')>=0)document.write(unescape('%3C')+'\!-'+'-')
+//--></script>
+<!--/DO NOT REMOVE/-->
+<!-- End SiteCatalyst code version: H.24.4. -->
+
+  
+<!-- BEGIN Qualaroo --> 
+<script type="text/javascript">
+  // don't use Qualaroo in non-production environments
+  if(document.location.host.indexOf("www.mathworks")>-1){ 
+    var _kiq = _kiq || [];
+    (function(){
+      setTimeout(function(){
+      var d = document, f = d.getElementsByTagName('script')[0], s = d.createElement('script'); s.type = 'text/javascript';
+      s.async = true; s.src = '//s3.amazonaws.com/ki.js/49559/ahy.js'; f.parentNode.insertBefore(s, f);
+      }, 1);
+    })();
+  }
+</script>
+<!-- END Qualaroo -->     
+
+</body></html>
